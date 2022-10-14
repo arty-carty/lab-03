@@ -12,11 +12,7 @@ output: html_document
 library(tidyverse) 
 ```
 
-<<<<<<< HEAD
 ```{r reading-nobel-data, message = FALSE}
-=======
-```{r load-data, message = FALSE}
->>>>>>> 26011f49bd8a66c94c7d23743a5c4870645ac094
 nobel <- read_csv("data/nobel.csv")
 ```
 
@@ -24,8 +20,9 @@ nobel <- read_csv("data/nobel.csv")
 
 #### Narrative
 
-*Remove this text and add your answer here.*
-
+```{r exercise-1, message = FALSE}
+#There are 26 variables and 935 observations. Each row represents a nobel prize laureate.
+```
 
 ### Exercise 2
 
