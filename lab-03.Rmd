@@ -21,7 +21,7 @@ nobel <- read_csv("data/nobel.csv")
 #### Narrative
 
 ```{r exercise-1, message = FALSE}
-#There are 26 variables and 935 observations. Each row represents a nobel prize laureate.
+#CThere are 26 variables and 935 observations. Each row represents a nobel prize laureate.
 ```
 
 ### Exercise 2
@@ -29,7 +29,10 @@ nobel <- read_csv("data/nobel.csv")
 #### Code
 
 ```{r nobel-living}
-# remove this comment and add your code here
+nobel_living<- filter(nobel, country==country,
+                      na.rm = TRUE, 
+                      gender != "org", 
+                      is.na(died_date) == TRUE)
 ```
 
 #### Narrative
